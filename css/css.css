@@ -1,0 +1,367 @@
+@font-face {
+font-family: "SF Text";
+font-weight: 400;
+src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
+}
+
+@font-face {
+font-family: "SF Display";
+font-weight: 700;
+src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+
+/** Medium */
+@font-face {
+font-family: "SF Text";
+font-weight: 500;
+src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
+}
+
+@media (max-width: 576px) {
+
+	.dBoardCol {
+		flex: 50%;
+	}
+
+}
+
+@media (min-width: 576px) {
+
+	.dBoardCol {
+		flex: 25%;
+	}
+
+}
+
+body {
+	font-family: "Helvetica";
+	margin: 0;
+}
+
+.header {
+	float: left;
+	width: 100%;
+	height: 140px;
+	background: rgba(248,248,248,0.82);
+	box-shadow: 0 1px 0 0 rgba(0,0,0,0.30);
+}
+
+.first-header {
+	margin: 45px 0 1px 0;
+	height: 44px;
+	width: 100%;
+}
+
+.first-header img {
+	float: left;
+	margin: 10px 6px 10px 8px;
+}
+
+.first-header span {
+	float: left;
+	font-family: "SF Text";
+	font-size: 17px;
+	color: #007AFF;
+	letter-spacing: -0.41px;
+	line-height: 22px;
+
+	margin: 11px 0;
+	display: block;
+}
+
+.second-header span {
+
+	font-family: "SF Display";
+	font-size: 34px;
+	color: #000000;
+	letter-spacing: 0.41px;
+	line-height: 41px;
+	margin: 0 0 0 14px;
+
+}
+
+a#backTop {
+	background-color: transparent;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+a#backHome {
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+
+a#backHome span {
+	display: block;
+}
+
+a#backHome img {
+	margin: 0 auto;
+	max-height: 64px;
+}
+
+.WelcomeScreen {
+	float: left;
+	padding: 50px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.WelcomeScreen a {
+	background-color: #EFEFF4;
+	color: #007AFF;
+	font-size: 11px;
+	letter-spacing: 2.5px;
+	text-decoration: none;
+	border-radius: 9px;
+	padding: 10px 15px;
+	line-height: 20px;
+	display: block;
+	max-width: 300px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-family: "SF Text";
+	font-weight: 500;
+	font-size: 17px;
+	letter-spacing: -0.41px;
+	line-height: 22px;
+}
+
+.WelcomeScreen p {
+	max-width: 200px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
+
+.WelcomeScreen img {
+	max-height: 64px;
+}
+
+.dBoard-Form {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	margin: 0 auto;
+	float: left;
+}
+
+.dBoard-Form .BoxInput {
+	max-width: none;
+	display: block;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.dBoard-Form input {
+	width: 100%;
+	text-indent: 15px;	
+	margin: 0 0 15px 0;
+	padding: 10px 0;
+	border: 0;
+	line-height: 20px;
+	background-color: #ccc;
+	outline: 0;
+}
+
+.dBoard-Form .largeButton {
+	width: 100%;
+	font-weight: 600;
+}
+
+.Whole-Column {
+	flex: 100%;
+}
+
+.Half-Column {
+	flex: 50%;
+}
+
+.Third-Column {
+	flex: 33.333%;
+}
+
+#dBoardSuppliers {
+	background-image: url("../img/supplier.png");
+}
+
+#dBoardComponents {
+	background-image: url("../img/components.png");
+}
+
+#dBoardProducts {
+	background-image: url("../img/package.png");
+}
+
+#dBoardLocations {
+	background-image: url("../img/locations.svg");
+}
+
+.dBoardCon {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dBoardCol {
+	display: flex;
+	background-color: #eee;
+	min-height: 150px;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	transition: all 0.2s;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: auto 64px;
+}
+
+.dBoardCol:hover {
+	cursor: pointer;
+	transition: all 0.2s;
+	background-color: #555;
+}
+
+.dBoardCol:hover h3 {
+	transition: all 0.2s;
+	color: #fff;
+}
+
+.dBoardCol h3 {
+	transition: all 0.2s;
+	display: block;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	margin: 0;
+}
+
+.dBoardCol a {
+	display: block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+.SelectionBox {
+	border: 1px solid #000;
+	padding: 50px;
+	margin: 50px;
+}
+
+.BoxInput {
+	display: inline-block;
+	position: relative;
+	border: 1px solid #000;
+	padding: 10px;
+	margin: 0 20px 20px 0;
+	max-width: 200px;
+}
+
+.BoxInput label {
+	padding: 0 5px;
+	color: #000;
+	background-color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-6px) translateX(10px);
+}
+
+input.largeButton {
+	display: block;
+	background-color: #000;
+	color: #fff;
+	line-height: 50px;
+	text-decoration: none;
+	padding: 0 20px;
+	text-align: center;
+	border: 0;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+
+table td {
+	border: 1px solid #000;
+}
+
+table.components_table img {
+	max-height: 50px;
+	max-width: 50px;
+}
+
+table.components_table img:hover {
+	cursor: pointer;
+}
+
+a.table_link {
+}
+
+.form_container {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.New_Form_Design {
+	position: relative;
+	margin-bottom: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form_container h2 {
+	font-size: 21px;
+}
+
+.New_Form_Design span {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0 0 7px 0;
+	width: 100%;
+}
+
+.New_Form_Design span.small_text {
+	font-weight: 400;
+	font-size: 11px;
+}
+
+.New_Form_Design input[type="text"] {
+	background-color: #F2F7F9;
+	border: 1px solid #ADB4BC;
+	height: 34px;
+	padding: 0 10px;
+	flex: 100%;
+}
+
+.New_Form_Design input[type="submit"] {
+	height: 36px;
+	background-color: #2D6DEB;
+	border: 0;
+	color: #fff;
+	flex: 100%;
+}
+
+.New_Form_Design input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.New_Form_Design select {
+	width: 100%;
+	margin: 0;
+}
